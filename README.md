@@ -39,7 +39,12 @@ inside Visual Studio (Or your proffered text editor/IDE), go to `file` in the to
 once you have opened that folder in your text editor/IDE, you can go to `file` again, and click `create new file` (or if your using VS code, right click in the explorer on the left, and select `new file`), then name that new file `modinfo.yaml`.   
 > This step is very important that it is `modinfo.yaml` exactly, or MTT will **Not** pick it up, and your mod wont function correctly! if your mod dosent seem to be working, cheak that you dident do `Modinfo.yaml` with a capital M or somthing simmilar!
 
+within that `modinfo.yaml`, put this:
+```
+modversion: 1
+modauthor: yournamehere!
 
+```
 
 
 ### Logo made with:
