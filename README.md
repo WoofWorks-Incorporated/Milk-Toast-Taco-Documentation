@@ -34,6 +34,12 @@ once your in the `mods` directory, create a new folder and name it whatever you 
 once you have done that, you will need a text editor, for this you can use just normal notepad, but we suggest you use a [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Intergrated Development Enviroment).   
 popular IDE's include Visual Studio Code, which can be downloaded from the official visual studio code website [here!](https://code.visualstudio.com/), its free and works very well!
 
+inside Visual Studio (Or your proffered text editor/IDE), go to `file` in the top menu bar (These steps may vary slightly depending on the text editor/IDE) and go to `open folder` (Or somthing simmilar), then navigate your MTT directory, and the new mod folder you just created.   
+
+once you have opened that folder in your text editor/IDE, you can go to `file` again, and click `create new file` (or if your using VS code, right click in the explorer on the left, and select `new file`), then name that new file `modinfo.yaml`.   
+> This step is very important that it is `modinfo.yaml` exactly, or MTT will **Not** pick it up, and your mod wont function correctly! if your mod dosent seem to be working, cheak that you dident do `Modinfo.yaml` with a capital M or somthing simmilar!
+
+
 
 
 ### Logo made with:
