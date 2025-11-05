@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Toast Taco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <img src="../mttlogo.png">
+        <h1>Welcome To Milk Toast Taco!</h1>
+        <p>Version 0.1 Beta - Concept Build :D</p>
+        <hr>
+    </center>
+    <div id="leftsidepanel">
+        <p>Heres where all the varibals go :D</p>
+        <br>
+        <p>Money: $500</p>
+        <p>Level: 1</p>
+        <p>Day: Wednesday</p>
+        <p>Time: 12:00 PM</p>
+        <br>
+        <p></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <div id="informationsection">
+            <strong>Heres some information you might like :D</strong>
+            <p>
+                <strong>Vehicle Damage System:</strong>
+                (Represented by every part on any said vehicle having a value from 1-10, 1 being no damage, 10 being fully damaged! all of values for every part on a vehicle is then calculated together somhow to work out the total vehicle damage! there can also be more specific things, like if your fuel tank has damage greater than say 8 damage, it will start leaking, and thus your fuel level will start going down!)
+            </p>
+            <p>
+                <strong>Vehicle Buying/Selling/Reselling:</strong>
+                You can buy vehicles from vehicle dealers dotted around the maps, or thru a computer, vehicles prices are caluclated by the parts they have installed, and that "calculated" price, is taken, and slightly modified within a set range (to simulate varible prices by the seller) hopefully this will stop vehicles from being stupidly cheap/way to expensive if they have a calucated price to start with, and then the slight random is added/taken from that? :D
+                You can also sell vehicles at the same dealerships (only cirtain dealerships support selling your vehicles for you), or you can sell them online on a computer, and the same system in buying vehicles applies to selling them, it caluclates a starting price from all the installed parts on the said vehicle, and then the user can select a price within a set threshold around that starting price, if the price is too hard, NPC's wont buy the vehicle, or they will try and put in low offers, if the price is too cheap, there will be a lot of NPC's attempting to buy it, and the user will likely lose money if they sell it for less than the car is worth...
+            </p>
+            <p>
+                <strong>Vehicle Parts System:</strong>
+                you can also install arftermarket parts on your vehicles! you can source these parts on the nourmurus online dealerships on the computer, or in store car parts shops dotted around the map! (Note, some dealerships online might be cheaper than in person, but beware of shipping costs!!! >:D)!
+                in singleplayer the prices are static (defined in stuff2/prices.yaml), but in multiplayer they do have some dynamicness to them, the default prices are used to start, but depending on if a lot of players buy a cirtain item, there is a chance the shop owner (NPC or player)will raise its price, and it visa versa, if a item is selling poorly, there is a small chance the shop owner (NPC or player) will chose to lower the price in attempt to get the item to sell.
+                arfter you have purchased a part, you can install it on your vehicle a few diffrent ways, option 1 is to go to a paid mechanic and pay a fee for them to install it for you, note that mechanic shops have a star rating (1* to 5*****) and be wary, some mechanic shops may be scams, and arfter you pay them they might not complete the job and theres a small chance they steal your new parts for themselves! so be sure to cheak ratins and/or reviews if playing in multiplayer!
+                option 2 is to install it yourself, you will need a addiqute garage location, and the correct tools for the job! (Tools can be purchased at cirtain tool shops, vehicle part stores and occasianlly general stores dotted around the map!).
+                park your desired vehicle in your garage, select the part you want to install from your inventory, and the reqired tool for the job (If you dont know what tool you need, cheak the ingame manual by pressing f10 ingame), then you can press "E", and you can review the stamina costs, time the install will take, and if it looks good, you can click to confirm, be wary tho, there is a very small chance (about 0.3%) you may be injured while installing the part, if so the part install will be cancelled and if the injury is bad you will have to go to a hosbital and pay hosibital fee's.
+                also! if the parts you install do not meet the regulations in your state of the map, there is a chance police will notice you and you could get fined or your vehicle impounded! you can confirm the legality of vehicle parts at council buildings and/or police stations in your town/state of the map.
+            </p>
+            <p>
+                <strong>Police System:</strong>
+                in MTT, there are police stations dotted around the maps and states, some are smaller, some are bigger, and in those police stations are 5-30 officers depending on the police stations size and employment ratios in its town, that all have working shifts, diffrent jobs ect.
+                the police officers on shifts for patrol will patrol around designated areas (these areas are more in areas with high recent crime, densly populated areas ect) in the police cars, they will catch players/NPCs that are breaking laws, if a officer catches a NPC/player breaking a law, they can chose to issue a fine, or a verbal warning, the decision is depending on the servirity law the player/npc in question broke and the officers personailty/traits.
+                Laws also vary by states in the maps, and state goverments can chose to issue new laws on top of the predefined laws (That are defined in stuff/laws.yaml), states by default start with a starting set of laws out of all the laws defined in laws.yaml, and in the case of incresed offences or crimes, the state goverment can chose to issue new laws from the predefined laws to try and solve the crime ect.
+                if a player or npc decides to attempt to escape/run from a police officer, the police officer can chase the player/npc in question, and use varying tactics to catch/stop the fleeing npc/player, these tatics are defined in "stuff2/policetactics.yaml", and states goverments determine witch tatics are allowed versus not allowed, and the tatics used are varying with the allowed tatics in the current state, and also the severity of the situation, if NPC/player lifes are at risk the officers can chose to use more extreme tatics to stop/catch the player/npc.
+                if a Npc/player is cought disobaying the law in that current state, they can be issued a fine by the officer, or for more extreme law breaks, they can be issued a large fine by the states/towns court of justice, and even jail time, what is issued by a officer/the court varys by state laws, options (detailed in stuff2/lawfullpunishments.yaml) and other varying factors.
+                there is also the small chance of "false court trials" where the court judge or another person within the court was bribed or had a motive against the said ocusser, and thus lead to a flase acusation, if this is discovered the case of a active or previues case, the ocuser should be given compinsation and a fair redo trial, and the judge or person that was bribed or had motives against the ocuser should lose there job, and have optionally punished by the state according to that states laws/regulations/opinions ect.
+            </p>
+            <p>
+                <strong>Economy And Trade System</strong>
+                in MTT theres a detailed Economy & Trade System! (Of course there is :D) where prices are slightly dynamic, they all start static, defined from a stuff2/prices.yaml, but depending on supply/demand, and the shop owner/supplyers thoughts, they can change dramatically.
+                say for example, a farm is producing apples, they sell them to a general store in a town, where the citizens of that town buy them.
+                if say for example another apple farm opened up, this causes compition for the first apple farm, and with compitition gives the people of the town more choice, and if the 2end apple farm is selling nicer apples, more people will buy from them, and less from the first apple farm, thus the first apple farm sees drops in profit, and has to raise prices to cover production and running costs, and then those price increses, the genral store buying these apples to sell will have to pay more, so they will have to sell the apples in there general store for more, and then that will deter customers, who might look for cheaper alternitives...
+                and this is only one of the many ways a small change in the econmy can cause huge difrences in the state, maybe even the world of MTT.
+                and continueing on this example, what if a general store in a town across sees the first general store selling there apples for $3.99, where as they are selling them for only $2.99, so they decide to raise there price to match the compitition, and if other general stores see these 2 selling there apples for $3.99 now, they all two will raise there prices, thus causing a ripple in the state wide econmy, where apples went from $2.99 state wide, to $3.99 state wide..
+                And now this affects anyone who might be buying these apples, say a grandma in a small town has a cake making bussiness, and she uses apples in her apple slice, she will now have to pay $3.99 for all her apples, meaning she will have to charge more for her apple slices...
+                and this example is a good way to show how the econmy works in MTT, 1 small change in the economy can cause a huge change in the economy.
+                the whole system hindges off the idea of supply and demand, if there is more demand than there is supply, prices will go up to cover the production costs, if theres not enough demand, prices will likely go down so bussinesses can sell more to cover there costs, there is still some factors in it tho, not every bussiness will do the same as others, it all depends on the thoughts of the player/npc who is running that bussiness, state regulations, say maybe a state regulations says you cant sell apples for less than $3.20 (This is a bad example) then prices will enevitbly go up to $3.20 or more, and there are also a lot of other factors that affect this.
+                there is also factors like, if a general store is getting its apples from one apple farm for $2.99 each and selling them for $3.99 ($1 profit for each apple the general store sells), but if they see a diffrent apple farm selling there apples for $1.99, they can switch to buying apples from them, and they can either sell the apples for $2.99, likely attracting more customers equalling more sales, witch gives them more profit, or they can keep selling them for $3.99 even tho they are only payin $1.99 for them, so they are now making $2 in proft per apple they sell. (the maths is probbabbly wrong but you get the idea :D)
+
+            </p>
+            <strong>EHHEHEE did i say it was gonna be quite a lot of info? :D</strong>
+
+        </div>
+    </center>
+    
+</body>
+</html>
